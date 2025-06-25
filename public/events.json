@@ -1,0 +1,63 @@
+[
+    {
+      "id": "event_001",
+      "name": "Tech Innovators Conference 2025",
+      "thumbnail": "https://i.ibb.co.com/xKfp0kVJ/tech-con.jpg",
+      "category": "Technology",
+      "date": "2025-05-15",
+      "location": "Dhaka Convention Center, Dhaka",
+      "entry_fee": 500,
+      "description": "An exclusive gathering of tech leaders and innovators from around the world."
+    },
+    {
+      "id": "event_002",
+      "name": "Future of AI Summit",
+      "thumbnail": "https://i.ibb.co.com/tTK6GvY8/ai-summit.webp",
+      "category": "Artificial Intelligence",
+      "date": "2025-06-20",
+      "location": "Silicon Valley Conference Hall, USA",
+      "entry_fee": 750,
+      "description": "Exploring the impact and future possibilities of artificial intelligence."
+    },
+    {
+      "id": "event_003",
+      "name": "GreenTech Expo 2025",
+      "thumbnail": "https://i.ibb.co.com/VWFQqXHg/green-tech.webp",
+      "category": "Environment",
+      "date": "2025-07-10",
+      "location": "Berlin Expo Center, Germany",
+      "entry_fee": 300,
+      "description": "Showcasing the latest innovations in sustainable and green technologies."
+    },
+    {
+      "id": "event_004",
+      "name": "Cybersecurity World Forum",
+      "thumbnail": "https://i.ibb.co.com/xSGvZgVF/cybersecurity.png",
+      "category": "Security",
+      "date": "2025-08-05",
+      "location": "Singapore Tech Park",
+      "entry_fee": 600,
+      "description": "A global forum discussing threats, trends, and solutions in cybersecurity."
+    },
+    {
+      "id": "event_005",
+      "name": "Blockchain Bangladesh 2025",
+      "thumbnail": "https://i.ibb.co.com/N6RYRBCg/blockchain.jpg",
+      "category": "Finance",
+      "date": "2025-09-12",
+      "location": "BICC, Dhaka",
+      "entry_fee": 400,
+      "description": "Insights into blockchain innovations and their applications in finance."
+    },
+    {
+      "id": "event_006",
+      "name": "EduTech Summit Asia",
+      "thumbnail": "https://i.ibb.co.com/nqdsxcct/eduTech.jpg",
+      "category": "Education",
+      "date": "2025-10-25",
+      "location": "KLCC, Kuala Lumpur",
+      "entry_fee": 350,
+      "description": "Exploring the future of education technology in the digital age."
+    }
+  ]
+  
