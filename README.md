@@ -3,7 +3,7 @@
 A community-driven platform to create, join, and track social events in local areas. The goal is to encourage social responsibility and environmental awareness through collaborative social activities.
 
 <!-- Project Photo -->
-<img src="https://i.ibb.co/6cwzWJFQ/better-bork.png" alt="Cover" width="100%" />
+<img src="https://i.ibb.co/KPCw6hF/better-work-2.png" alt="Cover" width="100%" />
 
 🔗 **Live Website**: [https://better-work-by-tauhid.netlify.app/](https://better-work-by-tauhid.netlify.app/)
 
@@ -46,13 +46,19 @@ A community-driven platform to create, join, and track social events in local ar
 
 ##### 📦 Installation & Setup
 
-1. **Clone the Repository:**
+ **Clone the Repository:**
 
    ```bash
    git clone https://github.com/your-username/better-work.git
    ```
+ **Run the Command:**
+
+   ```bash
+   npm install
+   ```
 
 🧪 Future Improvements
+
 📢 Push notifications for upcoming events
 
 📍 Map integration with location-based filtering
