@@ -2,11 +2,10 @@
 
 A community-driven platform to create, join, and track social events in local areas. The goal is to encourage social responsibility and environmental awareness through collaborative social activities.
 
+🔗 **Live Website**: [https://better-work-by-tauhid.netlify.app/](https://better-work-by-tauhid.netlify.app/)
+
 <!-- Project Photo -->
 ![Cover](https://i.ibb.co/KPCw6hF/better-work-2.png)
-
-
-🔗 **Live Website**: [https://better-work-by-tauhid.netlify.app/](https://better-work-by-tauhid.netlify.app/)
 
 ---
 
@@ -45,12 +44,12 @@ A community-driven platform to create, join, and track social events in local ar
 - **CORS** – Cross-Origin Resource Sharing
 - **dotenv** – Environment variable manager
 
-##### 📦 Installation & Setup
+### **Installation & Setup**
 
  **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/better-work.git
+   git clone https://github.com/Tauhid25/better-work-client.git
    ```
  **Run the Command:**
 
@@ -58,7 +57,7 @@ A community-driven platform to create, join, and track social events in local ar
    npm install
    ```
 
-🧪 Future Improvements
+### **Future Improvements**
 
 📢 Push notifications for upcoming events
 
