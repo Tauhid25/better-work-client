@@ -3,7 +3,8 @@
 A community-driven platform to create, join, and track social events in local areas. The goal is to encourage social responsibility and environmental awareness through collaborative social activities.
 
 <!-- Project Photo -->
-<img src="https://i.ibb.co/KPCw6hF/better-work-2.png" alt="Cover" width="100%" />
+![Cover](https://i.ibb.co/KPCw6hF/better-work-2.png)
+
 
 🔗 **Live Website**: [https://better-work-by-tauhid.netlify.app/](https://better-work-by-tauhid.netlify.app/)
 
