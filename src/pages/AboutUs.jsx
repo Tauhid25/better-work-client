@@ -49,8 +49,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-       {/* Site Overview Section */}
-
+    
     <SiteOverview />
     </div>
   );
