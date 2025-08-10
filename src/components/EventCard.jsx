@@ -20,7 +20,7 @@ const EventCard = ({ event }) => {
         <p>Category : {eventType}</p>
         <p>Place : {location}</p>
 
-        {/* View Details Button */}
+       
         <Link to={`/event-details/${_id}`}>
           <button className="w-full rounded-2xl border border-[#009fff] dark:border-white font-medium py-2 mt-2 hover:bg-[#007dff] hover:text-white transition duration-200 cursor-pointer">
             View Event
