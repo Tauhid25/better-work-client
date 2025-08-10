@@ -13,7 +13,7 @@ const UpcomingEvents = () => {
   const [loading, setLoading] = useState(true);
 
   console.log('my events', events);
-  // Fetch events with optional query parameters
+ 
   const fetchEvents = async (search = "", category = "All") => {
     setLoading(true);
     try {
