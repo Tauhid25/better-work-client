@@ -24,7 +24,7 @@ const Login = () => {
         const user = result.user;
         setUser(user);
         toast.success("You have logged in successfully!");
-        // navigate(`${location.state ? location.state : "/"}`);
+    
         setTimeout(() => {
           navigate(location.state ? location.state : "/");
         }, 100);
