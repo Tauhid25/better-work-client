@@ -7,7 +7,7 @@ const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = () => {
-    setIsOpen(false); // Close dropdown after click
+    setIsOpen(false); 
   };
 
   return (
