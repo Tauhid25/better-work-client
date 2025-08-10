@@ -17,7 +17,7 @@ const JoinEventsContainer = ({ joinEventsPromise }) => {
       confirmButtonText: "Yes, cancel it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/joinEvents/${id}`, {
+        fetch(`https://better-work-server.vercel.app/joinEvents/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

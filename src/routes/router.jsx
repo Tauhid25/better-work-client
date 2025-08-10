@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
         path: "/",
         hydrateFallbackElement: <Loading></Loading>,
         loader: () =>
-          fetch("http://localhost:3000/appFeatures"),
+          fetch("https://better-work-server.vercel.app/appFeatures"),
         Component: Home,
       },
       {
@@ -33,13 +33,13 @@ export const router = createBrowserRouter([
       },
       {
         path: "/upcoming-events",
-        loader: () => fetch("http://localhost:3000/events"),
+        loader: () => fetch("https://better-work-server.vercel.app/events"),
         Component: UpcomingEvents,
       },
       {
         path: "/event-details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/events/${params.id}`),
+          fetch(`https://better-work-server.vercel.app/events/${params.id}`),
         element: (
           <PrivateRoute>
             <EventDetails></EventDetails>
@@ -73,7 +73,7 @@ export const router = createBrowserRouter([
       {
         path: "/update-event/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/events/${params.id}`),
+          fetch(`https://better-work-server.vercel.app/events/${params.id}`),
         Component: UpdateEvent,
       },
     ],

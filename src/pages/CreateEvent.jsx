@@ -99,7 +99,7 @@ const CreateEvent = () => {
 
     const formattedDate = formData.eventDate.toLocaleDateString("en-CA");
 
-    fetch("http://localhost:3000/events", {
+    fetch("https://better-work-server.vercel.app/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

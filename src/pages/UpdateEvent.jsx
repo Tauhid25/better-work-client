@@ -95,7 +95,7 @@ const UpdateEvent = () => {
       );
     }
 
-    fetch(`http://localhost:3000/events/${event._id}`, {
+    fetch(`https://better-work-server.vercel.app/events/${event._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

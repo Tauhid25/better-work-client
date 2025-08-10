@@ -17,7 +17,7 @@ const UpcomingEvents = () => {
   const fetchEvents = async (search = "", category = "All") => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:3000/events", {
+      const res = await axios.get("https://better-work-server.vercel.app/events", {
         params: {
           search: search || undefined,
           category: category !== "All" ? category : undefined,

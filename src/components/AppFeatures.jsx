@@ -4,8 +4,7 @@ import AppFeature from "./AppFeature";
 
 const AppFeatures = () => {
   const featuresData = useLoaderData() || [];
-  console.log(featuresData);
- 
+   
 
   return (
     <div className="w-full dark:bg-gray-800 dark:text-white">

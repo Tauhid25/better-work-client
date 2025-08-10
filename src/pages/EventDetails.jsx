@@ -18,7 +18,7 @@ const EventDetails = () => {
 
   const handleJoinEvent = () => {
     axios
-      .post("http://localhost:3000/joinEvents", eventWithoutId)
+      .post("https://better-work-server.vercel.app/joinEvents", eventWithoutId)
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
