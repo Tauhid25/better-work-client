@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const EventCard = ({ event }) => {
   const { _id, title, thumbnail, eventDate, eventType, location } = event;
   return (
-    <div className="bg-white dark:bg-gray-800 dark:border dark:border-white dark:text-white rounded-2xl px-3 py-6 hover:scale-105 transition-transform duration-300">
+    <div className="bg-white dark:bg-gray-800 dark:border dark:border-white dark:text-white rounded-2xl px-2 pt-8 pb-6 hover:scale-105 transition-transform duration-300">
       <div>
         <img
           className="w-[350px] h-[200px] rounded-lg mx-auto"

@@ -6,6 +6,7 @@ import Newsletter from "../components/NewsLetter";
 import { Helmet } from "react-helmet-async";
 import SuccessSection from "../components/SuccessSection";
 import ClientReview from "../components/ClientReview";
+import Sponsors from "../components/Sponsors";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Banner />
       <AppFeatures />
       <Gallery />
+      <Sponsors />
       <SuccessSection />
       <ClientReview />
       <Newsletter />

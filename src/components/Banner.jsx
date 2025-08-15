@@ -1,97 +1,83 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const slides = [
+  {
+    id: 1,
+    title: "Plant Trees, Grow Hope",
+    desc: "Join hands to make our planet greener and healthier.",
+    img: "https://i.ibb.co/4ZNY8DJX/plant-1.jpg",
+  },
+  {
+    id: 2,
+    title: "Clean Streets, Bright Future",
+    desc: "Small actions today create a cleaner tomorrow.",
+    img: "https://i.ibb.co/ccr0DzY0/road-clean.jpg",
+  },
+  {
+    id: 3,
+    title: "Protect Nature, Preserve Life",
+    desc: "Together, we can build a sustainable world.",
+    img: "https://i.ibb.co/HTVXGV63/plant-3.jpg",
+  },
+];
 
 const Banner = () => {
+  const [index, setIndex] = useState(0);
+
+  // Auto-change every 4 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const current = slides[index];
+
   return (
-    <div>
-      <div className="bg-gray-100 px-4 md:px-12 lg:px-16 py-4 md:py-6 dark:bg-gray-800 dark:text-white">
-        <div>
-          <Swiper
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            modules={[Autoplay]}
-            speed={3000}
-            className="relative"
+    <div
+      className="relative h-[50vh] md:h-[70vh] lg:h-[80vh] w-full bg-cover bg-center bg-no-repeat rounded-lg"
+      style={{
+        backgroundImage: `url('https://i.ibb.co.com/x870tDm1/paper.jpg')`,
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex items-center justify-between h-full px-6 md:px-8 lg:px-16">
+        {/* Left Side - Text */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current.id}
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -100, opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="max-w-3xl text-white"
           >
-            <SwiperSlide>
-              <div className="relative">
-                <img
-                  className="rounded-lg w-full h-80 md:h-96 lg:h-160"
-                  src="https://i.ibb.co/4ZNY8DJX/plant-1.jpg"
-                  alt="Slide 1"
-                />
-                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white rounded-lg">
-                  <h2 className="text-lg md:text-2xl lg:text-3xl font-bold text-center">
-                    Plant Trees for a Greener Future.
-                  </h2>
-                  <p className="text-sm md:text-base my-4 px-4 md:px-20 lg:px-60 text-justify">
-                    Tree plantation improves air quality, combats climate
-                    change, supports wildlife and healthy living, enhances
-                    biodiversity, reduces soil erosion, provides shade, cools
-                    urban areas, beautifies landscapes, and boosts mental
-                    well-being.
-                  </p>
-                  <button className="btn text-white bg-[#009fff] hover:bg-[#007dff]">
-                    Join Us
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
+            <h1 className="text-xl md:text-3xl lg:text-5xl font-bold mb-4">
+              {current.title}
+            </h1>
+            <p className="text-sm md:text-lg mb-6 opacity-90 pr-4">{current.desc}</p>
+            <button className="bg-[#009fff] text-white px-4 py-1 rounded-lg text-sm md:text-lg hover:bg-[#007dff] cursor-pointer">Join Now</button>
+          </motion.div>
+        </AnimatePresence>
 
-            <SwiperSlide>
-              <div className="relative">
-                <img
-                  className="rounded-lg w-full h-80 md:h-96 lg:h-160"
-                  src="https://i.ibb.co/ccr0DzY0/road-clean.jpg"
-                  alt="Slide 2"
-                />
-                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white rounded-lg">
-                  <h2 className="text-lg md:text-2xl lg:text-3xl font-bold text-center">
-                    Cleaning Roads, Building Better Communities
-                  </h2>
-                  <p className="text-sm md:text-base my-4 px-4 md:px-20 lg:px-60 text-justify">
-                    Volunteers unite to clean roads, promoting community pride,
-                    environmental care, and social responsibility through
-                    service, fostering teamwork, reducing pollution, enhancing
-                    safety, inspiring others, and creating lasting positive
-                    impact.
-                  </p>
-                  <button className="btn text-white bg-[#009fff] hover:bg-[#007dff]">
-                    Join Us
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="relative">
-                <img
-                  className="rounded-lg w-full h-80 md:h-96 lg:h-160"
-                  src="https://i.ibb.co/HTVXGV63/plant-3.jpg"
-                  alt="Slide 3"
-                />
-                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white rounded-lg">
-                  <h2 className="text-lg md:text-2xl lg:text-3xl font-bold text-center">
-                    Plant Trees, Protect Nature, Preserve Future.
-                  </h2>
-                  <p className="text-xs md:text-base my-4 px-4 md:px-20 lg:px-60 text-justify">
-                    Tree plantation purifies air, conserves soil, supports
-                    wildlife, reduces heat, and fights climate change, improves
-                    mental health, provides shelter, enhances beauty, restores
-                    ecosystems, and promotes sustainability.
-                  </p>
-                  <button className="btn text-white bg-[#007fff] hover:bg-[#007dff]">
-                    Join Us
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        {/* Right Side - Image */}
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={current.img}
+            src={current.img}
+            alt={current.title}
+            className="w-24 md:w-72 lg:w-112 h-24 md:h-40 lg:h-64 object-cover rounded-lg shadow-lg"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 100, opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
       </div>
     </div>
   );
